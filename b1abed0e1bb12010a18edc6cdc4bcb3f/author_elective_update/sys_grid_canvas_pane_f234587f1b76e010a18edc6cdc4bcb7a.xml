@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_grid_canvas_pane">
+    <sys_grid_canvas_pane action="DELETE">
+        <grid_canvas display_value="PA Homepage - New Tab">7f1bf9461b322010a18edc6cdc4bcb0f</grid_canvas>
+        <height>10</height>
+        <portal_widget display_value="Created 2021-03-16 06:19:01">a634d47f1b76e010a18edc6cdc4bcb73</portal_widget>
+        <posx>0</posx>
+        <posy>0</posy>
+        <sys_class_name>sys_grid_canvas_pane</sys_class_name>
+        <sys_created_by>a.marinin</sys_created_by>
+        <sys_created_on>2021-03-16 13:19:02</sys_created_on>
+        <sys_id>f234587f1b76e010a18edc6cdc4bcb7a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>7f1bf9461b322010a18edc6cdc4bcb0f</sys_name>
+        <sys_package display_value="Demo ExM" source="x_572969_demo_exm">b1abed0e1bb12010a18edc6cdc4bcb3f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Demo ExM">b1abed0e1bb12010a18edc6cdc4bcb3f</sys_scope>
+        <sys_update_name>sys_grid_canvas_pane_f234587f1b76e010a18edc6cdc4bcb7a</sys_update_name>
+        <sys_updated_by>a.marinin</sys_updated_by>
+        <sys_updated_on>2021-03-16 13:19:02</sys_updated_on>
+        <width>12</width>
+    </sys_grid_canvas_pane>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Demo ExM">b1abed0e1bb12010a18edc6cdc4bcb3f</application>
+        <file_path/>
+        <instance_id>dbbb625cdbfb1780b2e05d00cf9619c7</instance_id>
+        <instance_name>dev68802</instance_name>
+        <name>sys_grid_canvas_pane_f234587f1b76e010a18edc6cdc4bcb7a</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_grid_canvas_pane"><sys_grid_canvas_pane action="INSERT_OR_UPDATE"><grid_canvas display_value="PA Homepage - New Tab">7f1bf9461b322010a18edc6cdc4bcb0f</grid_canvas><height>10</height><portal_widget display_value="Created 2021-03-16 06:19:01">a634d47f1b76e010a18edc6cdc4bcb73</portal_widget><posx>0</posx><posy>0</posy><sys_class_name>sys_grid_canvas_pane</sys_class_name><sys_created_by>a.marinin</sys_created_by><sys_created_on>2021-03-16 13:19:02</sys_created_on><sys_id>f234587f1b76e010a18edc6cdc4bcb7a</sys_id><sys_mod_count>0</sys_mod_count><sys_name>7f1bf9461b322010a18edc6cdc4bcb0f</sys_name><sys_package display_value="Demo ExM" source="x_572969_demo_exm">b1abed0e1bb12010a18edc6cdc4bcb3f</sys_package><sys_policy/><sys_scope display_value="Demo ExM">b1abed0e1bb12010a18edc6cdc4bcb3f</sys_scope><sys_update_name>sys_grid_canvas_pane_f234587f1b76e010a18edc6cdc4bcb7a</sys_update_name><sys_updated_by>a.marinin</sys_updated_by><sys_updated_on>2021-03-16 13:19:02</sys_updated_on><width>12</width></sys_grid_canvas_pane></record_update>]]></payload>
+        <payload_hash>-710955478</payload_hash>
+        <record_name>7f1bf9461b322010a18edc6cdc4bcb0f</record_name>
+        <reverted_from/>
+        <source>cea490a11bb22010a18edc6cdc4bcb51</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>a.marinin</sys_created_by>
+        <sys_created_on>2021-03-16 13:19:02</sys_created_on>
+        <sys_id>ba34587f1b76e010a18edc6cdc4bcb7b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1783b3092ac0000001</sys_recorded_at>
+        <sys_updated_by>a.marinin</sys_updated_by>
+        <sys_updated_on>2021-03-16 13:19:02</sys_updated_on>
+        <type>Grid Canvas Pane</type>
+        <update_guid>f234587f6376e01094259c3ee0fd2f7b</update_guid>
+        <update_guid_history>f234587f6376e01094259c3ee0fd2f7b:-710955478</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>a.marinin</sys_created_by>
+        <sys_created_on>2021-03-16 13:20:18</sys_created_on>
+        <sys_db_object display_value="" name="sys_grid_canvas_pane">sys_grid_canvas_pane</sys_db_object>
+        <sys_id>67e7869622824e1b8fc5ed59bb3c4831</sys_id>
+        <sys_metadata>f234587f1b76e010a18edc6cdc4bcb7a</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>7f1bf9461b322010a18edc6cdc4bcb0f</sys_name>
+        <sys_package display_value="Demo ExM" source="x_572969_demo_exm">b1abed0e1bb12010a18edc6cdc4bcb3f</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Demo ExM">b1abed0e1bb12010a18edc6cdc4bcb3f</sys_scope>
+        <sys_scope_delete display_value="">2dbcc83d1d3443189c0893413526de40</sys_scope_delete>
+        <sys_update_name>sys_grid_canvas_pane_f234587f1b76e010a18edc6cdc4bcb7a</sys_update_name>
+        <sys_update_version display_value="sys_grid_canvas_pane_f234587f1b76e010a18edc6cdc4bcb7a">ba34587f1b76e010a18edc6cdc4bcb7b</sys_update_version>
+        <sys_updated_by>a.marinin</sys_updated_by>
+        <sys_updated_on>2021-03-16 13:20:18</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

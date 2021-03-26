@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties">
+    <sys_properties action="INSERT_OR_UPDATE">
+        <choices/>
+        <description>t_agree.id_agree in ExM</description>
+        <ignore_cache>true</ignore_cache>
+        <is_private>false</is_private>
+        <name>x_572969_demo_exm.exm_id_agree</name>
+        <read_roles>admin</read_roles>
+        <suffix>exm_id_agree</suffix>
+        <sys_class_name>sys_properties</sys_class_name>
+        <sys_created_by>a.mostovoy</sys_created_by>
+        <sys_created_on>2021-03-02 08:22:32</sys_created_on>
+        <sys_id>82884b8f1b2e2010a18edc6cdc4bcbef</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_572969_demo_exm.exm_id_agree</sys_name>
+        <sys_package display_value="Demo ExM" source="x_572969_demo_exm">b1abed0e1bb12010a18edc6cdc4bcb3f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Demo ExM">b1abed0e1bb12010a18edc6cdc4bcb3f</sys_scope>
+        <sys_update_name>sys_properties_82884b8f1b2e2010a18edc6cdc4bcbef</sys_update_name>
+        <sys_updated_by>a.mostovoy</sys_updated_by>
+        <sys_updated_on>2021-03-02 08:22:32</sys_updated_on>
+        <type>string</type>
+        <value>4010000077969</value>
+        <write_roles>admin</write_roles>
+    </sys_properties>
+    <sys_translated_text action="delete_multiple" query="documentkey=82884b8f1b2e2010a18edc6cdc4bcbef"/>
+</record_update>

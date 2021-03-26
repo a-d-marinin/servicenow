@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_macro">
+    <sys_ui_macro action="DELETE">
+        <active>true</active>
+        <category>general</category>
+        <description/>
+        <media_type/>
+        <name>approval_summarizer_master</name>
+        <scoped_name>x_572969_demo_exm_approval_summarizer_master</scoped_name>
+        <sys_class_name>sys_ui_macro</sys_class_name>
+        <sys_created_by>a.marinin</sys_created_by>
+        <sys_created_on>2021-03-18 09:26:13</sys_created_on>
+        <sys_id>28468e481b032010a18edc6cdc4bcb47</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>approval_summarizer_master</sys_name>
+        <sys_package display_value="Demo ExM" source="x_572969_demo_exm">b1abed0e1bb12010a18edc6cdc4bcb3f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Demo ExM">b1abed0e1bb12010a18edc6cdc4bcb3f</sys_scope>
+        <sys_update_name>sys_ui_macro_28468e481b032010a18edc6cdc4bcb47</sys_update_name>
+        <sys_updated_by>a.marinin</sys_updated_by>
+        <sys_updated_on>2021-03-18 10:00:16</sys_updated_on>
+        <xml><![CDATA[<?xml version="1.0" encoding="utf-8" ?>
+<j:jelly trim="true" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">
+    <g:evaluate var="jvar_has_source">
+        var flag = !${ref}.sysapproval.nil() || !${ref}.source_table.nil();
+        flag;
+    </g:evaluate>
+    <j:if test="${jvar_has_source}">
+        <g:evaluate var="jvar_ni" jelly="true"
+            expression="
+            var gr = null;
+            if ( !${ref}.source_table.nil()) {
+                gr = new GlideRecord(${ref}.source_table);
+                gr.get( ${ref}.document_id);
+            } else {
+                gr = new GlideRecord('task');
+                gr.get(${ref}.sysapproval);
+            }
+        " />
+        <g:evaluate>
+            g_approval_form_request = true; // this global is checked in ACLs
+        </g:evaluate>
+        <g:evaluate>
+            var rp_backup = RP;
+        </g:evaluate>
+        <g:evaluate var="jvar_my_form">
+            var gc = new GlideController();
+            var p = new GlidePopup(gc, (gr.getRecordClassName() || '') + '');
+            p.putParameter("sys_id", (gr.sys_id || '') + '');
+            p.putParameter("sysparm_view", "approval");
+            //PRB579164: Skip g_form creation in activities.xml if activities displayed in formatter
+            p.putParameter("sysparm_skip_gform", "true");
+	     p.putParameter("sysparm_table", gr.getRecordClassName());
+	     p.putParameter("sysparm_readonly_activity", "true");
+            var rp = p.getRenderProperties();
+            rp.setSmallCaption(true);
+            rp.setInlinePopup(true);
+            rp.setReadOnly(false);
+            p.getPopup();
+        </g:evaluate>
+        <tr id="approval_summary_row">
+            <td width="100%" colspan="2">
+                <j2:if test="${gs.getProperty('glide.security.use_csrf_token')}">
+                    <input type="HIDDEN" name="sysparm_ck" value="$[gs.getSessionToken()]" />
+                </j2:if>
+                <div id="approval_summary" style="padding-top:8px;display:none;">
+                    <div class="caption" style="padding:4px;">${gs.getMessage('TEST - Summary of Item being approved')}</div>
+                    <div style="padding-left:2px;">
+                        <div class="form-horizontal">
+                            <g:no_escape>${jvar_my_form}</g:no_escape>
+                        </div>
+                    </div>
+                </div>
+            </td>
+        </tr>
+        <g:evaluate>
+            delete g_approval_form_request; // removes the global
+        </g:evaluate>
+        <script>
+            addRenderEvent(moveSummaryForm);
+            function moveSummaryForm() {
+                var e = $("approval_summary");
+                var form = $("sysapproval_approver.do");
+                var formParent = form.parentNode;
+                formParent.appendChild(e);
+                e.show();
+            }
+        </script>
+        <g:evaluate>
+            RP = rp_backup;
+        </g:evaluate>
+    </j:if>
+</j:jelly>]]></xml>
+    </sys_ui_macro>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Demo ExM">b1abed0e1bb12010a18edc6cdc4bcb3f</application>
+        <file_path/>
+        <instance_id>dbbb625cdbfb1780b2e05d00cf9619c7</instance_id>
+        <instance_name>dev68802</instance_name>
+        <name>sys_ui_macro_28468e481b032010a18edc6cdc4bcb47</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_ui_macro"&gt;&lt;sys_ui_macro action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;category&gt;general&lt;/category&gt;&lt;description/&gt;&lt;media_type/&gt;&lt;name&gt;approval_summarizer_master&lt;/name&gt;&lt;scoped_name&gt;x_572969_demo_exm_approval_summarizer_master&lt;/scoped_name&gt;&lt;sys_class_name&gt;sys_ui_macro&lt;/sys_class_name&gt;&lt;sys_created_by&gt;a.marinin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-03-18 09:26:13&lt;/sys_created_on&gt;&lt;sys_id&gt;28468e481b032010a18edc6cdc4bcb47&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name&gt;approval_summarizer_master&lt;/sys_name&gt;&lt;sys_package display_value="Demo ExM" source="x_572969_demo_exm"&gt;b1abed0e1bb12010a18edc6cdc4bcb3f&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Demo ExM"&gt;b1abed0e1bb12010a18edc6cdc4bcb3f&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_macro_28468e481b032010a18edc6cdc4bcb47&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;a.marinin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-03-18 10:00:16&lt;/sys_updated_on&gt;&lt;xml&gt;&lt;![CDATA[&lt;?xml version="1.0" encoding="utf-8" ?&gt;
+&lt;j:jelly trim="true" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null"&gt;
+    &lt;g:evaluate var="jvar_has_source"&gt;
+        var flag = !${ref}.sysapproval.nil() || !${ref}.source_table.nil();
+        flag;
+    &lt;/g:evaluate&gt;
+    &lt;j:if test="${jvar_has_source}"&gt;
+        &lt;g:evaluate var="jvar_ni" jelly="true"
+            expression="
+            var gr = null;
+            if ( !${ref}.source_table.nil()) {
+                gr = new GlideRecord(${ref}.source_table);
+                gr.get( ${ref}.document_id);
+            } else {
+                gr = new GlideRecord('task');
+                gr.get(${ref}.sysapproval);
+            }
+        " /&gt;
+        &lt;g:evaluate&gt;
+            g_approval_form_request = true; // this global is checked in ACLs
+        &lt;/g:evaluate&gt;
+        &lt;g:evaluate&gt;
+            var rp_backup = RP;
+        &lt;/g:evaluate&gt;
+        &lt;g:evaluate var="jvar_my_form"&gt;
+            var gc = new GlideController();
+            var p = new GlidePopup(gc, (gr.getRecordClassName() || '') + '');
+            p.putParameter("sys_id", (gr.sys_id || '') + '');
+            p.putParameter("sysparm_view", "approval");
+            //PRB579164: Skip g_form creation in activities.xml if activities displayed in formatter
+            p.putParameter("sysparm_skip_gform", "true");
+	     p.putParameter("sysparm_table", gr.getRecordClassName());
+	     p.putParameter("sysparm_readonly_activity", "true");
+            var rp = p.getRenderProperties();
+            rp.setSmallCaption(true);
+            rp.setInlinePopup(true);
+            rp.setReadOnly(false);
+            p.getPopup();
+        &lt;/g:evaluate&gt;
+        &lt;tr id="approval_summary_row"&gt;
+            &lt;td width="100%" colspan="2"&gt;
+                &lt;j2:if test="${gs.getProperty('glide.security.use_csrf_token')}"&gt;
+                    &lt;input type="HIDDEN" name="sysparm_ck" value="$[gs.getSessionToken()]" /&gt;
+                &lt;/j2:if&gt;
+                &lt;div id="approval_summary" style="padding-top:8px;display:none;"&gt;
+                    &lt;div class="caption" style="padding:4px;"&gt;${gs.getMessage('TEST - Summary of Item being approved')}&lt;/div&gt;
+                    &lt;div style="padding-left:2px;"&gt;
+                        &lt;div class="form-horizontal"&gt;
+                            &lt;g:no_escape&gt;${jvar_my_form}&lt;/g:no_escape&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;g:evaluate&gt;
+            delete g_approval_form_request; // removes the global
+        &lt;/g:evaluate&gt;
+        &lt;script&gt;
+            addRenderEvent(moveSummaryForm);
+            function moveSummaryForm() {
+                var e = $("approval_summary");
+                var form = $("sysapproval_approver.do");
+                var formParent = form.parentNode;
+                formParent.appendChild(e);
+                e.show();
+            }
+        &lt;/script&gt;
+        &lt;g:evaluate&gt;
+            RP = rp_backup;
+        &lt;/g:evaluate&gt;
+    &lt;/j:if&gt;
+&lt;/j:jelly&gt;]]&gt;&lt;/xml&gt;&lt;/sys_ui_macro&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>2014788624</payload_hash>
+        <record_name>approval_summarizer_master</record_name>
+        <reverted_from/>
+        <source>cea490a11bb22010a18edc6cdc4bcb51</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>a.marinin</sys_created_by>
+        <sys_created_on>2021-03-18 10:00:16</sys_created_on>
+        <sys_id>32e93d541b8b2010a18edc6cdc4bcb22</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17844c752d10000001</sys_recorded_at>
+        <sys_updated_by>a.marinin</sys_updated_by>
+        <sys_updated_on>2021-03-18 10:00:16</sys_updated_on>
+        <type>Macro</type>
+        <update_guid>7ae93d54d48b2010402e346cc0c61221</update_guid>
+        <update_guid_history>7ae93d54d48b2010402e346cc0c61221:2014788624,f312f1dcd84b201035315f047c084303:2101149519</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>a.marinin</sys_created_by>
+        <sys_created_on>2021-03-18 10:09:46</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_macro">sys_ui_macro</sys_db_object>
+        <sys_id>41f0dff41c2048e08e9556ab1e0dd510</sys_id>
+        <sys_metadata>28468e481b032010a18edc6cdc4bcb47</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>approval_summarizer_master</sys_name>
+        <sys_package display_value="Demo ExM" source="x_572969_demo_exm">b1abed0e1bb12010a18edc6cdc4bcb3f</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Demo ExM">b1abed0e1bb12010a18edc6cdc4bcb3f</sys_scope>
+        <sys_scope_delete display_value="">2dbcc83d1d3443189c0893413526de40</sys_scope_delete>
+        <sys_update_name>sys_ui_macro_28468e481b032010a18edc6cdc4bcb47</sys_update_name>
+        <sys_update_version display_value="sys_ui_macro_28468e481b032010a18edc6cdc4bcb47">32e93d541b8b2010a18edc6cdc4bcb22</sys_update_version>
+        <sys_updated_by>a.marinin</sys_updated_by>
+        <sys_updated_on>2021-03-18 10:09:46</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

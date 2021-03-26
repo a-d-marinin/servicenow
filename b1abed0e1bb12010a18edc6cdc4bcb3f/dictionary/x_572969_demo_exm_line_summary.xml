@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Line summary" max_length="40" name="x_572969_demo_exm_line_summary" sizeclass="82" type="collection">
+        <element attributes="edge_encryption_enabled=true,encode_utf8=false" label="ID account" mandatory="true" max_length="32" name="id_account" reference="x_572969_demo_exm_account" reference_cascade_rule="delete" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="nadjustment_cost" max_length="40" name="nadjustment_cost" type="float"/>
+        <element attributes="edge_encryption_enabled=true" label="Ncredit cost" max_length="40" name="ncredit_cost" type="float"/>
+        <element attributes="edge_encryption_enabled=true" label="nequipment_cost" max_length="40" name="nequipment_cost" type="float"/>
+        <element attributes="edge_encryption_enabled=true" label="nmain_subscriptions_cost" max_length="40" name="nmain_subscriptions_cost" type="float"/>
+        <element attributes="edge_encryption_enabled=true" label="Non-usage cost" max_length="40" name="nother_cost" type="float"/>
+        <element attributes="edge_encryption_enabled=true" label="nsubscription_options_cost" max_length="40" name="nsubscription_options_cost" type="float"/>
+        <element attributes="edge_encryption_enabled=true" label="ntax_cost" max_length="40" name="ntax_cost" type="float"/>
+        <element attributes="edge_encryption_enabled=true" label="Usage cost" max_length="40" name="nusage_cost" type="float"/>
+        <element dependent="id_account.num" dependent_on_field="id_account.num" label="Period" max_length="40" name="period" type="string" use_dependent_field="true"/>
+        <element label="scurrent_node" max_length="200" name="scurrent_node" type="string"/>
+        <element label="semail" max_length="100" name="semail" type="string"/>
+        <element label="semployee_number" max_length="100" name="semployee_number" type="string"/>
+        <element label="Plan" max_length="2000" name="smain_subscriptions" type="string"/>
+        <element label="soperator" max_length="100" name="soperator" type="string"/>
+        <element label="Phone number" max_length="100" name="sphone_number" type="string"/>
+        <element label="sservice_type" max_length="200" name="sservice_type" type="string"/>
+        <element label="Features" max_length="2000" name="ssubscription_options" type="string"/>
+        <element display="true" label="User name" max_length="200" name="suser" type="string"/>
+        <element attributes="edge_encryption_enabled=true" function_definition="glidefunction:add(nusage_cost, nother_cost)" function_field="true" label="Total" max_length="40" name="total" read_only="true" type="float"/>
+        <index name="index">
+            <element name="id_account"/>
+        </index>
+    </element>
+</database>

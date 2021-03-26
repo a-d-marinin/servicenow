@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_view">
+    <sys_ui_view action="INSERT_OR_UPDATE">
+        <group/>
+        <hidden>false</hidden>
+        <name>workflows</name>
+        <roles/>
+        <sys_class_name>sys_ui_view</sys_class_name>
+        <sys_created_by>s.kobzar</sys_created_by>
+        <sys_created_on>2021-02-17 08:37:34</sys_created_on>
+        <sys_id>6ce054431bda6010a18edc6cdc4bcb40</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Workflows</sys_name>
+        <sys_package display_value="Demo ExM" source="x_572969_demo_exm">b1abed0e1bb12010a18edc6cdc4bcb3f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Demo ExM">b1abed0e1bb12010a18edc6cdc4bcb3f</sys_scope>
+        <sys_update_name>sys_ui_view_6ce054431bda6010a18edc6cdc4bcb40</sys_update_name>
+        <sys_updated_by>s.kobzar</sys_updated_by>
+        <sys_updated_on>2021-02-17 08:37:34</sys_updated_on>
+        <title>Workflows</title>
+        <user/>
+    </sys_ui_view>
+</record_update>

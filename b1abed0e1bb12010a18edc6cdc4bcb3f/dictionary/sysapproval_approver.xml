@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" label="Approval" max_length="40" name="sysapproval_approver" sizeclass="1016" type="collection">
+        <element label="ID zero usage" max_length="32" name="x_572969_demo_exm_id_zero_usage" reference="x_572969_demo_exm_zero_usage" type="reference"/>
+    </element>
+</database>

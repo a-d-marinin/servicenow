@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>sys_user</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition/>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>ExM user change</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[	gs.info("10:" + gs.getProperty("x_572969_demo_exm.exm_url"));
+
+
+var request = new sn_ws.RESTMessageV2();
+request.setEndpoint(gs.getProperty("x_572969_demo_exm.exm_url") + "/eem");
+request.setHttpMethod('POST');
+request.setRequestHeader("Accept","application/json");
+
+var i = 1;
+var department_list = '';
+var current_department = current.department.sys_id;
+while (i <= 5 && current_department) {
+  var dep = new GlideRecord('cmn_department');
+  gs.info("12.1:" + current_department);
+  var qc = dep.addQuery('sys_id', current_department);
+  dep.query();
+  dep.next();
+  department_list += dep.getValue('name') + '~~~';
+  current_department = dep.getValue('parent');
+  i++;
+}
+
+var department_array = department_list.split("~~~");
+department_list = '';
+var j = department_array.length - 1;
+for (i=0; i < department_array.length - 1; i++) {
+   department_list += ',"hl' + j + '":"' + department_array[i] + '"';
+	j--;
+}
+
+
+var query = '{"Envelope":{"Body":{"querySNChangeUser":{"client_id":"' + gs.getProperty('x_572969_demo_exm.exm_id_agree') + '","sys_id":"' + current.sys_id + '","employee_number":"' + current.employee_number + '","last_name":"' + current.last_name + '","first_name":"' + current.first_name + '","email":"' + current.email +'","mobile_phone":"' + current.mobile_phone + '"' + department_list + '}}}}';
+
+gs.info("12:" + query);
+
+request.setRequestBody(query);
+var response = request.execute();
+gs.info("20:" + response.getBody());]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>a.mostovoy</sys_created_by>
+        <sys_created_on>2021-03-02 06:34:58</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>332f2a031b2e2010a18edc6cdc4bcb5e</sys_id>
+        <sys_mod_count>19</sys_mod_count>
+        <sys_name>ExM user change</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Demo ExM" source="x_572969_demo_exm">b1abed0e1bb12010a18edc6cdc4bcb3f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Demo ExM">b1abed0e1bb12010a18edc6cdc4bcb3f</sys_scope>
+        <sys_update_name>sys_script_332f2a031b2e2010a18edc6cdc4bcb5e</sys_update_name>
+        <sys_updated_by>a.mostovoy</sys_updated_by>
+        <sys_updated_on>2021-03-04 13:12:08</sys_updated_on>
+        <template/>
+        <when>async</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=332f2a031b2e2010a18edc6cdc4bcb5e"/>
+</record_update>

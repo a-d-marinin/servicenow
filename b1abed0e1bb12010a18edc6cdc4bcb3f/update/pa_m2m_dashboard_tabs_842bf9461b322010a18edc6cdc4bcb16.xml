@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="pa_m2m_dashboard_tabs">
+    <pa_m2m_dashboard_tabs action="INSERT_OR_UPDATE">
+        <dashboard display_value="Homepage">64aa75461b322010a18edc6cdc4bcbba</dashboard>
+        <home>false</home>
+        <homepage/>
+        <order>1</order>
+        <sys_class_name>pa_m2m_dashboard_tabs</sys_class_name>
+        <sys_created_by>a.marinin</sys_created_by>
+        <sys_created_on>2021-03-11 10:19:13</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>842bf9461b322010a18edc6cdc4bcb16</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>64aa75461b322010a18edc6cdc4bcbba</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Demo ExM" source="x_572969_demo_exm">b1abed0e1bb12010a18edc6cdc4bcb3f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Demo ExM">b1abed0e1bb12010a18edc6cdc4bcb3f</sys_scope>
+        <sys_update_name>pa_m2m_dashboard_tabs_842bf9461b322010a18edc6cdc4bcb16</sys_update_name>
+        <sys_updated_by>a.marinin</sys_updated_by>
+        <sys_updated_on>2021-03-11 10:19:13</sys_updated_on>
+        <tab display_value="Homepage - New Tab">882bf9461b322010a18edc6cdc4bcb13</tab>
+    </pa_m2m_dashboard_tabs>
+</record_update>

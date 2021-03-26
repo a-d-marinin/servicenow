@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="" section_id="d170be521bd22010a18edc6cdc4bcb09" sys_domain="global" table="x_572969_demo_exm_zero_usage" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>sphone_number</element>
+            <position>0</position>
+            <sys_created_by>a.marinin</sys_created_by>
+            <sys_created_on>2021-03-17 16:36:51</sys_created_on>
+            <sys_id>861b464c1b032010a18edc6cdc4bcb33</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_572969_demo_exm_zero_usage" sys_domain="global" view="Default view">d170be521bd22010a18edc6cdc4bcb09</sys_ui_section>
+            <sys_updated_by>a.marinin</sys_updated_by>
+            <sys_updated_on>2021-03-17 16:36:51</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>id_account</element>
+            <position>1</position>
+            <sys_created_by>a.marinin</sys_created_by>
+            <sys_created_on>2021-03-17 16:36:51</sys_created_on>
+            <sys_id>0a1b464c1b032010a18edc6cdc4bcb33</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_572969_demo_exm_zero_usage" sys_domain="global" view="Default view">d170be521bd22010a18edc6cdc4bcb09</sys_ui_section>
+            <sys_updated_by>a.marinin</sys_updated_by>
+            <sys_updated_on>2021-03-17 16:36:51</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>semployee_number</element>
+            <position>2</position>
+            <sys_created_by>a.marinin</sys_created_by>
+            <sys_created_on>2021-03-17 16:36:51</sys_created_on>
+            <sys_id>8a1b464c1b032010a18edc6cdc4bcb33</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_572969_demo_exm_zero_usage" sys_domain="global" view="Default view">d170be521bd22010a18edc6cdc4bcb09</sys_ui_section>
+            <sys_updated_by>a.marinin</sys_updated_by>
+            <sys_updated_on>2021-03-17 16:36:51</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>suser_name</element>
+            <position>3</position>
+            <sys_created_by>a.marinin</sys_created_by>
+            <sys_created_on>2021-03-17 16:36:51</sys_created_on>
+            <sys_id>0e1b464c1b032010a18edc6cdc4bcb33</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_572969_demo_exm_zero_usage" sys_domain="global" view="Default view">d170be521bd22010a18edc6cdc4bcb09</sys_ui_section>
+            <sys_updated_by>a.marinin</sys_updated_by>
+            <sys_updated_on>2021-03-17 16:36:51</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>soperator</element>
+            <position>4</position>
+            <sys_created_by>a.marinin</sys_created_by>
+            <sys_created_on>2021-03-17 16:36:51</sys_created_on>
+            <sys_id>8e1b464c1b032010a18edc6cdc4bcb33</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_572969_demo_exm_zero_usage" sys_domain="global" view="Default view">d170be521bd22010a18edc6cdc4bcb09</sys_ui_section>
+            <sys_updated_by>a.marinin</sys_updated_by>
+            <sys_updated_on>2021-03-17 16:36:51</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>dcontract_expiration</element>
+            <position>5</position>
+            <sys_created_by>a.marinin</sys_created_by>
+            <sys_created_on>2021-03-17 16:36:51</sys_created_on>
+            <sys_id>021b464c1b032010a18edc6cdc4bcb34</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_572969_demo_exm_zero_usage" sys_domain="global" view="Default view">d170be521bd22010a18edc6cdc4bcb09</sys_ui_section>
+            <sys_updated_by>a.marinin</sys_updated_by>
+            <sys_updated_on>2021-03-17 16:36:51</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>semail</element>
+            <position>6</position>
+            <sys_created_by>a.marinin</sys_created_by>
+            <sys_created_on>2021-03-17 16:36:51</sys_created_on>
+            <sys_id>821b464c1b032010a18edc6cdc4bcb34</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_572969_demo_exm_zero_usage" sys_domain="global" view="Default view">d170be521bd22010a18edc6cdc4bcb09</sys_ui_section>
+            <sys_updated_by>a.marinin</sys_updated_by>
+            <sys_updated_on>2021-03-17 16:36:51</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>7</position>
+            <sys_created_by>a.marinin</sys_created_by>
+            <sys_created_on>2021-03-17 16:36:51</sys_created_on>
+            <sys_id>061b464c1b032010a18edc6cdc4bcb34</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_572969_demo_exm_zero_usage" sys_domain="global" view="Default view">d170be521bd22010a18edc6cdc4bcb09</sys_ui_section>
+            <sys_updated_by>a.marinin</sys_updated_by>
+            <sys_updated_on>2021-03-17 16:36:51</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>ssubscription</element>
+            <position>8</position>
+            <sys_created_by>a.marinin</sys_created_by>
+            <sys_created_on>2021-03-17 16:36:51</sys_created_on>
+            <sys_id>861b464c1b032010a18edc6cdc4bcb34</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_572969_demo_exm_zero_usage" sys_domain="global" view="Default view">d170be521bd22010a18edc6cdc4bcb09</sys_ui_section>
+            <sys_updated_by>a.marinin</sys_updated_by>
+            <sys_updated_on>2021-03-17 16:36:51</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>nusage_cost</element>
+            <position>9</position>
+            <sys_created_by>a.marinin</sys_created_by>
+            <sys_created_on>2021-03-17 16:36:51</sys_created_on>
+            <sys_id>1a1b464c1b032010a18edc6cdc4bcb34</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_572969_demo_exm_zero_usage" sys_domain="global" view="Default view">d170be521bd22010a18edc6cdc4bcb09</sys_ui_section>
+            <sys_updated_by>a.marinin</sys_updated_by>
+            <sys_updated_on>2021-03-17 16:36:51</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>sclient_number</element>
+            <position>10</position>
+            <sys_created_by>a.marinin</sys_created_by>
+            <sys_created_on>2021-03-17 16:36:51</sys_created_on>
+            <sys_id>9a1b464c1b032010a18edc6cdc4bcb34</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_572969_demo_exm_zero_usage" sys_domain="global" view="Default view">d170be521bd22010a18edc6cdc4bcb09</sys_ui_section>
+            <sys_updated_by>a.marinin</sys_updated_by>
+            <sys_updated_on>2021-03-17 16:36:51</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>sservice_type</element>
+            <position>11</position>
+            <sys_created_by>a.marinin</sys_created_by>
+            <sys_created_on>2021-03-17 16:36:51</sys_created_on>
+            <sys_id>1e1b464c1b032010a18edc6cdc4bcb34</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_572969_demo_exm_zero_usage" sys_domain="global" view="Default view">d170be521bd22010a18edc6cdc4bcb09</sys_ui_section>
+            <sys_updated_by>a.marinin</sys_updated_by>
+            <sys_updated_on>2021-03-17 16:36:51</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>nother_cost</element>
+            <position>12</position>
+            <sys_created_by>a.marinin</sys_created_by>
+            <sys_created_on>2021-03-17 16:36:51</sys_created_on>
+            <sys_id>9e1b464c1b032010a18edc6cdc4bcb34</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_572969_demo_exm_zero_usage" sys_domain="global" view="Default view">d170be521bd22010a18edc6cdc4bcb09</sys_ui_section>
+            <sys_updated_by>a.marinin</sys_updated_by>
+            <sys_updated_on>2021-03-17 16:36:51</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>state</element>
+            <position>13</position>
+            <sys_created_by>a.marinin</sys_created_by>
+            <sys_created_on>2021-03-17 16:36:51</sys_created_on>
+            <sys_id>121b464c1b032010a18edc6cdc4bcb35</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_572969_demo_exm_zero_usage" sys_domain="global" view="Default view">d170be521bd22010a18edc6cdc4bcb09</sys_ui_section>
+            <sys_updated_by>a.marinin</sys_updated_by>
+            <sys_updated_on>2021-03-17 16:36:51</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>status</element>
+            <position>14</position>
+            <sys_created_by>a.marinin</sys_created_by>
+            <sys_created_on>2021-03-17 16:36:51</sys_created_on>
+            <sys_id>921b464c1b032010a18edc6cdc4bcb35</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_572969_demo_exm_zero_usage" sys_domain="global" view="Default view">d170be521bd22010a18edc6cdc4bcb09</sys_ui_section>
+            <sys_updated_by>a.marinin</sys_updated_by>
+            <sys_updated_on>2021-03-17 16:36:51</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption/>
+            <header>false</header>
+            <name>x_572969_demo_exm_zero_usage</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>s.kobzar</sys_created_by>
+            <sys_created_on>2021-02-15 12:19:18</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>d170be521bd22010a18edc6cdc4bcb09</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_572969_demo_exm_zero_usage</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Demo ExM" source="x_572969_demo_exm">b1abed0e1bb12010a18edc6cdc4bcb3f</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Demo ExM">b1abed0e1bb12010a18edc6cdc4bcb3f</sys_scope>
+            <sys_update_name>sys_ui_section_d170be521bd22010a18edc6cdc4bcb09</sys_update_name>
+            <sys_updated_by>s.kobzar</sys_updated_by>
+            <sys_updated_on>2021-02-15 12:19:18</sys_updated_on>
+            <sys_user/>
+            <title>true</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_package_dependency_m2m">
+    <sys_package_dependency_m2m action="INSERT_OR_UPDATE">
+        <dependency display_value="Approval Engine" source="com.snc.approvals">bc357f04c927101091f9f06464832789</dependency>
+        <min_version>1.0.0</min_version>
+        <sys_created_by>a.marinin</sys_created_by>
+        <sys_created_on>2021-03-16 08:50:00</sys_created_on>
+        <sys_id>f5a617271bf2e010a18edc6cdc4bcb7d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_package display_value="Demo ExM" source="x_572969_demo_exm">b1abed0e1bb12010a18edc6cdc4bcb3f</sys_package>
+        <sys_updated_by>a.marinin</sys_updated_by>
+        <sys_updated_on>2021-03-16 08:50:00</sys_updated_on>
+    </sys_package_dependency_m2m>
+</record_update>

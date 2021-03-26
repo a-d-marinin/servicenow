@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Zero usage" max_length="40" name="x_572969_demo_exm_zero_usage" sizeclass="83" type="collection">
+        <element label="Approval history" max_length="100" name="approval_history" type="string_full_utf8"/>
+        <element label="Approve" max_length="100" name="approve" type="string_full_utf8"/>
+        <element label="Contract expiration" max_length="40" name="dcontract_expiration" type="glide_date"/>
+        <element attributes="edge_encryption_enabled=true,encode_utf8=false" label="ID account" mandatory="true" max_length="40" name="id_account" reference="x_572969_demo_exm_account" reference_cascade_rule="delete" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" display="true" label="Other cost" max_length="20" name="nother_cost" type="decimal"/>
+        <element attributes="edge_encryption_enabled=true" label="Usage cost" max_length="20" name="nusage_cost" type="decimal"/>
+        <element label="Client number" max_length="255" name="sclient_number" type="string_full_utf8"/>
+        <element label="Email" max_length="255" name="semail" type="string_full_utf8"/>
+        <element label="Employee number" max_length="255" name="semployee_number" type="string_full_utf8"/>
+        <element label="Operator" max_length="255" name="soperator" type="string_full_utf8"/>
+        <element label="Phone number" max_length="255" name="sphone_number" type="string_full_utf8"/>
+        <element label="sservice_type" max_length="255" name="sservice_type" type="string_full_utf8"/>
+        <element label="ssubscription" max_length="255" name="ssubscription" type="string_full_utf8"/>
+        <element display="true" label="State" max_length="100" name="state" type="string_full_utf8"/>
+        <element default="Active" display="true" label="Status" max_length="100" name="status" type="string_full_utf8"/>
+        <element label="suser_name" max_length="255" name="suser_name" type="string_full_utf8"/>
+        <index name="index">
+            <element name="id_account"/>
+        </index>
+    </element>
+</database>
